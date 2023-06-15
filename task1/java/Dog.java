@@ -7,6 +7,15 @@ public class Dog extends Animal{
         this.name = name;
     }
 
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "name='" + name + '\'' +
+                ", weight=" + getWeight() +
+                ", color='" + getColor() + '\'' +
+                ", ration='" + getRation() + '\'' +
+                '}';
+    }
 
     @Override
     public void getVoice() {

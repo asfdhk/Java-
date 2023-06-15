@@ -8,6 +8,16 @@ public class Cat extends Animal{
     }
 
     @Override
+    public String toString() {
+        return "Cat{" +
+                "name='" + name + '\'' +
+                ", weight=" + getWeight() +
+                ", color='" + getColor() + '\'' +
+                ", ration='" + getRation() + '\'' +
+                '}';
+    }
+
+    @Override
     public void getVoice() {
         System.out.println("mymymymymyymym");
     }
